@@ -19,6 +19,6 @@ notifications:
   slack:
       rooms:
           - miracloud:3hmpAUNQsEEN8ekwRMuaQQ2n#solar-dev
-      on_success: change
-      on_failure: change
+      on_success: :change
+      on_failure: :change
       on_start: never
