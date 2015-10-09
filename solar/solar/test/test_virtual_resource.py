@@ -58,7 +58,7 @@ def test_create_resource():
         'resource_fixtures', 'node')
     resources = vr.create('node1', node_path)
     assert len(resources) == 1
-    assert resources[0].name == 'node1'
+    assert resources[0].name == 'nodeBUG'
 
 def test_create_virtual_resource(tmpdir):
     base_path = os.path.join(
