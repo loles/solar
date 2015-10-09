@@ -16,7 +16,9 @@ services:
 after_success:
     cd solar && coveralls
 notifications:
-  slack: miracloud:3hmpAUNQsEEN8ekwRMuaQQ2n
-      on_success: changed
-      on_failure: changed
+  slack:
+      rooms:
+          - miracloud:3hmpAUNQsEEN8ekwRMuaQQ2n#solar-dev
+      on_success: change
+      on_failure: change
       on_start: never
